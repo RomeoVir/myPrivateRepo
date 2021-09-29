@@ -8,6 +8,7 @@ import java.util.Scanner;
 //
 //Aggiungo librerie java.util
 //Target assegnato come input da console.
+//
 
 public class Console {
 
