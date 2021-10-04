@@ -6,12 +6,13 @@ package draft;
 
 public class Array {
 
-	public static void main(String[] args) {
+	public static void main() {
 
 		int x[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		int target = 5;
 		test(x, target);
 		System.out.println(test(x, target));
+		System.out.println("Test completato.");
 	}
 
 	private static boolean test(int[] x, int target) {
