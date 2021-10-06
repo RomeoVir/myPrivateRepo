@@ -15,22 +15,27 @@ public class Console {
 	public static void main() {
 
 		int x[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		//int target = 5;
-		System.out.println("Digitare il numero da cercare:");
-		@SuppressWarnings("resource")
-		Scanner input = new Scanner(System.in);
-		int target = input.nextInt();
-		test(x, target);
-		System.out.println(test(x, target));
+		//input(numero); In questo modo si ripeteva 3 volte - 1
+		//test(x, input(numero));// -2 
+		String campoFinale = "Il numero è " + test(x, input());// -3
+		System.out.println(campoFinale);
 	}
 
-	private static boolean test(int[] x, int target) {
+	private static int input() {
+		System.out.println("Digitare il numero da cercare:");
+		Scanner input = new Scanner(System.in);
+		int risultato = input.nextInt();
+		input.close();
+		return risultato;
+	}
+
+	public static String test(int[] x, int target) {
 		for (int i = 0; i < x.length; i++) {
 			if (x[i] == target) {
-				return true;
+				return "Presente";
 			}
 		}
-		return false;
+		return "Assente";
 	}
 
 }
