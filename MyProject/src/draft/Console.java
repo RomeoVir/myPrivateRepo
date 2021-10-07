@@ -11,17 +11,19 @@ import java.util.Scanner;
 //
 
 public class Console {
-
+	
+	protected static int x[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	
 	public static void main() {
 
-		int x[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		
 		//input(numero); In questo modo si ripeteva 3 volte - 1
 		//test(x, input(numero));// -2 
 		String campoFinale = "Il numero è " + test(x, input());// -3
 		System.out.println(campoFinale);
 	}
 
-	private static int input() {
+	protected static int input() {
 		System.out.println("Digitare il numero da cercare:");
 		Scanner input = new Scanner(System.in);
 		int risultato = input.nextInt();

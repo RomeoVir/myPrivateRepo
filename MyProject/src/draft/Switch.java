@@ -20,6 +20,9 @@ public class Switch {
 		case "Console":
 			Console.main();
 			break;
+		case "ConsoleExtended":
+			ConsoleExtended.main();
+			break;
 		default:
 			System.out.println("Digitazione errata.");
 		}

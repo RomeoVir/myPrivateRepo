@@ -1,17 +1,12 @@
 package draft;
 
-import draft.Console;
 
 public class ConsoleExtended extends Console {
 	
-	//Da documentazione
-//	@Override
-//	public static void main() {
-//		ConsoleExtended myConsoleExtended = new ConsoleExtended();
-//		Console myConsole = myConsoleExtended;
-//		Console.main();
-//		
-//	}
+	public static void main() {
+		String campoFinale = "Il numero è " + test(x, input());
+		System.out.println(campoFinale);
+	}
 	
 	public static String test(int[] x, int target) {
 		for (int i = 0; i < x.length; i++) {
