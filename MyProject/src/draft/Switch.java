@@ -7,24 +7,30 @@ import java.util.Scanner;
 
 public class Switch {
 
-	public static void main(String[] args) {
+	public static void main() {
 		System.out.println("Digitare programma da eseguire:");
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		String programma = input.nextLine();
-
-		switch (programma) {
-		case "Array":
-			Array.main();
-			break;
-		case "Console":
-			Console.main();
-			break;
-		case "ConsoleExtended":
-			ConsoleExtended.main();
-			break;
-		default:
-			System.out.println("Digitazione errata.");
+		//while(!programma.contentEquals("Exit")) {
+			switch (programma) {
+			case "Array":
+				Array.main();
+				break;
+			case "Console":
+				Console.main();
+				break;
+			case "ConsoleExtended":
+				ConsoleExtended.main();
+				break;
+			case "1":
+				CompilaCostruttore.main();
+				break;
+			case "2":
+				MostraCostruttore.show();
+				break;
+			
+			//}
 		}
 	}
 }
