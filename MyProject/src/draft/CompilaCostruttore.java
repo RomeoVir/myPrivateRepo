@@ -18,21 +18,19 @@ public class CompilaCostruttore {
 		System.out.println("Digitare il nome del Modello 1:");
 		String risultato3 = input.next();
 		ModelloAuto.setModello(risultato3);
-		input.close();
 		
 		//Cilindrata, MArca, Modello
 		CostruttoreMoto ModelloMoto = new CostruttoreMoto (null, null, 0, null, null);
-		System.out.println("Digitare il numero di cavalli del Modello 1:");
-		Scanner moto = new Scanner(System.in);
-		int risultatoMoto = moto.nextInt();
+		System.out.println("Digitare il numero di cilindraya del Modello 2:");
+		int risultatoMoto = input.nextInt();
 		ModelloMoto.setCilindrata(risultatoMoto);
-		System.out.println("Digitare la marca del Modello 1:");
-		String risultatoMoto2 = moto.next();
+		System.out.println("Digitare la marca del Modello 2:");
+		String risultatoMoto2 = input.next();
 		ModelloMoto.setMarca(risultatoMoto2);
-		System.out.println("Digitare il nome del Modello 1:");
-		String risultatoMoto3 = moto.next();
+		System.out.println("Digitare il nome del Modello 2:");
+		String risultatoMoto3 = input.next();
 		ModelloMoto.setModello(risultatoMoto3);
-		moto.close();
+		input.close();
 	}
 
 }
