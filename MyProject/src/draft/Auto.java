@@ -18,4 +18,11 @@ public class Auto extends Veicolo {
 	private void schiacciaFreno(int velocita) {
 	}
 
+
+	@Override
+	public void fermati(int velocita) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

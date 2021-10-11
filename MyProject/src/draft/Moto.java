@@ -20,4 +20,8 @@ public class Moto extends Veicolo{
 		
 	}
 
+	@Override
+	public void fermati(int velocita) {		
+	}
+
 }
