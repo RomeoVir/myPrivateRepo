@@ -1,19 +1,16 @@
 package draft;
 
-public class CostruttoreMacchina {
+public class CostruttoreMacchina extends SuperCostruttore {
 
 	private int cavalli;
 	private String marca;
 	private String modello;
 
-	public CostruttoreMacchina(int cavalli, String marca, String modello) {
+	public CostruttoreMacchina(String nome, String oggetto, int cavalli, String marca, String modello) {
+		super(nome, oggetto);
 		this.cavalli = cavalli;
 		this.marca = marca;
 		this.modello = modello;
-	}
-	
-	//Super constructor
-	public CostruttoreMacchina() {
 	}
 
 	public int getCavalli() {

@@ -27,7 +27,7 @@ public class Switch {
 				CompilaCostruttore.main();
 				break;
 			case "2":
-				MostraCostruttore.show();
+				MostraOggetto.show();
 				break;
 			
 			//}
