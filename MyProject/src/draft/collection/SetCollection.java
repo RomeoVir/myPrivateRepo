@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SetCollection {
 
-	public static void Set() {
+	public static void set() {
 
 		Set<Automobile> setAutomobile = new HashSet<Automobile>();
 		

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListCollection {
 
-	public static void List() {
+	public static void list() {
 
 		List<Automobile> listAutomobile = new ArrayList<Automobile>();
 

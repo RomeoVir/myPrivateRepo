@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MapCollection {
 
-	public static void Map() {
+	public static void map() {
 		Map<String, Automobile> mappaAutomobile = new HashMap<String, Automobile>();
 
 		Automobile a1 = new Automobile("ABC123", "Agila", 320);
