@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SetCollection {
 
-	public static void set() {
+	public static Set<Automobile> set() {
 
 		Set<Automobile> setAutomobile = new HashSet<Automobile>();
 		
@@ -20,6 +20,9 @@ public class SetCollection {
 		
 		
 		System.out.println("Numero di elementi dentro al Set:" + setAutomobile.size());
+	
+		return setAutomobile;
 	}
+
 
 }

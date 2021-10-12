@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListCollection {
 
-	public static void list() {
+	public static List<Automobile> list() {
 
 		List<Automobile> listAutomobile = new ArrayList<Automobile>();
 
@@ -17,13 +17,14 @@ public class ListCollection {
 
 		Automobile a3 = new Automobile("FGH789", "Cupra", 400);
 		listAutomobile.add(a3);
-		
+
 		listAutomobile.remove(a1);
 
-		System.out.println("Numero di elementi dentro alla lista:" + listAutomobile.size());
-
-		for (int i = 0; i < listAutomobile.size(); i++) { //Concats è come mettere un +
-			System.out.println("Auto " + i + listAutomobile.get(i).getModello().concat(listAutomobile.get(i).getTarga()));
-		}
+//		System.out.println("Numero di elementi dentro alla lista:" + listAutomobile.size());
+//
+//		for (int i = 0; i < listAutomobile.size(); i++) { // Concats è come mettere un +
+//			System.out.println("Auto " + i + listAutomobile.get(i).getModello().concat(listAutomobile.get(i).getTarga()));
+//		}
+		return listAutomobile;
 	}
 }
