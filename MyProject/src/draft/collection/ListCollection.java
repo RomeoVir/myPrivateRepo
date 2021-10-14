@@ -19,7 +19,7 @@ public class ListCollection {
 		listAutomobile.add(a3);
 
 		listAutomobile.remove(a1);
-
+		
 //		System.out.println("Numero di elementi dentro alla lista:" + listAutomobile.size());
 //
 //		for (int i = 0; i < listAutomobile.size(); i++) { // Concats è come mettere un +
