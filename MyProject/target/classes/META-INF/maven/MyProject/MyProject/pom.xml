@@ -6,6 +6,8 @@
 	<artifactId>MyProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+	
+	
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -17,6 +19,18 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.11.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.23</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.5.3.Final</version>
+		</dependency>
+		
+		
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
