@@ -20,7 +20,7 @@
 				value="org.hibernate.dialect.PostgreSQLDialect" />
 			<property name="hibernate.default_schema" value="base" />
 
-			<property name="hibernate.hbm2ddl.auto" value="create" /> <!-- create/update/validate -->
+			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create/update/validate -->
 		
 		</properties>
 	</persistence-unit>
