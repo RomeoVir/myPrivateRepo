@@ -1,4 +1,4 @@
-package draftWeb;
+package draftServlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
