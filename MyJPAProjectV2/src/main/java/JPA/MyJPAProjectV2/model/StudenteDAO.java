@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class API {
+public class StudenteDAO {
 
 	EntityManagerFactory emf = Persistence.createEntityManagerFactory("MyJPAProjectV2");
 
@@ -14,7 +14,7 @@ public class API {
 
 	public void writeStudente() {
 		try {
-			Studente studente1 = new Studente( "Alfredo", "Mamaino", 3);
+			Studente studente1 = new Studente("Alfredo", "Mamaino", 3);
 			Studente studente2 = new Studente("Sangu", "Yammi", 9);
 			Studente studente3 = new Studente("Salino", "Franchissimo", 7);
 			Studente studente4 = new Studente("Alberto", "Alberti", 8);
@@ -27,7 +27,9 @@ public class API {
 			em.persist(studente3);
 			em.persist(studente4);
 			transaction.commit();
-
+			
+			System.out.println("Fine Commit Studenti.");
+			
 		} finally {
 			// em.close();
 		}

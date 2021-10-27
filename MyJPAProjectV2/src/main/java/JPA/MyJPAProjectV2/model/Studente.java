@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 //@Data
@@ -21,6 +22,9 @@ public class Studente {
 	private String nome;
 	private String cognome;
 	private int voto;
+	
+	@OneToOne
+	private Indirizzo indirizzo;
 	
 	public Studente() {
 	}
@@ -65,8 +69,11 @@ public class Studente {
 
 	@Override
 	public String toString() {
-		return "Studente [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", voto=" + voto + "]";
+		return "Studente [id=" + id + ", nome=" + nome + ", cognome=" + cognome + ", voto=" + voto + ", indirizzo="
+				+ indirizzo + "]";
 	}
+
+
 
 	
 }
