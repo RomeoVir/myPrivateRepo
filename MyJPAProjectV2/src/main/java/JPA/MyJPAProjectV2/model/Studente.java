@@ -9,19 +9,17 @@ import javax.persistence.Table;
 
 //@Data
 @Entity
-@Table(name="persona_fisica_PK3")
+@Table(name="studente_PK3")
 public class Studente {
 
 	@Id
 	@Column(name= "id")
-	@GeneratedValue (strategy = GenerationType.AUTO)
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
 	
 	@Column(name= "nome")
 	private String nome;
-	@Column(name= "cognome")
 	private String cognome;
-	@Column(name= "voto")
 	private int voto;
 	
 	public Studente() {

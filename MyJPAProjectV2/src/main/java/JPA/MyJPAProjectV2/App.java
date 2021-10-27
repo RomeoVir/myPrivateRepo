@@ -11,7 +11,7 @@ public class App {
 		
         API api = new API();
         IndirizzoAPI indirizzo = new IndirizzoAPI();
-        //api.writeStudente();
+        api.writeStudente();
         //api.deleteStudente();
         //api.updateStudente();
         //api.getStudente();

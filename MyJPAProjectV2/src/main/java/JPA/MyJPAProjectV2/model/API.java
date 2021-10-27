@@ -22,10 +22,10 @@ public class API {
 			EntityTransaction transaction = em.getTransaction();
 			transaction.begin();
 
-//			em.persist(studente1);
-//			em.persist(studente2);
-//			em.persist(studente3);
-//			em.persist(studente4);
+			em.persist(studente1);
+			em.persist(studente2);
+			em.persist(studente3);
+			em.persist(studente4);
 			transaction.commit();
 
 		} finally {

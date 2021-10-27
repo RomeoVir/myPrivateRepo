@@ -16,12 +16,11 @@ public class Indirizzo {
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	@Column(name = "paese")
 	private String paese;
-	@Column(name = "numero")
 	private int numero;
 
 	public Indirizzo() {
