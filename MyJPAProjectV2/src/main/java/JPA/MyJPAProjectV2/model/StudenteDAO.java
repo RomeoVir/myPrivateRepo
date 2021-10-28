@@ -12,29 +12,29 @@ public class StudenteDAO {
 	// Scrivere su DB
 	EntityManager em = emf.createEntityManager();
 
-	public void writeStudente() {
-		try {
-			Studente studente1 = new Studente("Alfredo", "Mamaino", 3);
-			Studente studente2 = new Studente("Sangu", "Yammi", 9);
-			Studente studente3 = new Studente("Salino", "Franchissimo", 7);
-			Studente studente4 = new Studente("Alberto", "Alberti", 8);
-
-			EntityTransaction transaction = em.getTransaction();
-			transaction.begin();
-
-			em.persist(studente1);
-			em.persist(studente2);
-			em.persist(studente3);
-			em.persist(studente4);
-			transaction.commit();
-			
-			System.out.println("Fine Commit Studenti.");
-			
-		} finally {
-			// em.close();
-		}
-
-	}
+//	public void writeStudente() {
+//		try {
+//			Studente studente1 = new Studente("Alfredo", "Mamaino", 3, indirizzo1);
+//			Studente studente2 = new Studente("Sangu", "Yammi", 9, indirizzo2);
+//			Studente studente3 = new Studente("Salino", "Franchissimo", 7, indirizzo3);
+//			Studente studente4 = new Studente("Alberto", "Alberti", 8, indirizzo4);
+//
+//			EntityTransaction transaction = em.getTransaction();
+//			transaction.begin();
+//
+//			em.persist(studente1);
+//			em.persist(studente2);
+//			em.persist(studente3);
+//			em.persist(studente4);
+//			transaction.commit();
+//			
+//			System.out.println("Fine Commit Studenti.");
+//			
+//		} finally {
+//			// em.close();
+//		}
+//
+//	}
 
 	// Leggere su DB
 	public void getStudente() {
@@ -42,10 +42,10 @@ public class StudenteDAO {
 			long id = 1;
 			for (int i = 0; i < 10; i++, id++) {
 				Studente studente = em.find(Studente.class, id);
-				System.out.println("Lettura: " + studente.toString());
+				System.out.println("Lettura: " + studente.getNome());
 			}
 		} finally {
-			System.out.println("Lettura componenti completata. ");
+			System.out.println("Lettura componenti. ");
 		}
 	}
 

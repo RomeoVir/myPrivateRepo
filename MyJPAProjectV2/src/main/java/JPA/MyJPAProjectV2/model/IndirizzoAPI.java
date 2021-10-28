@@ -13,10 +13,10 @@ public class IndirizzoAPI {
 
 	public void writeIndirizzo() {
 		
-		Indirizzo indirizzo1 = new Indirizzo("Garessio", 78);
-		Indirizzo indirizzo2 = new Indirizzo("Napoli", 2);
-		Indirizzo indirizzo3 = new Indirizzo("Roma", 7);
-		Indirizzo indirizzo4 = new Indirizzo("Mondovi", 5);
+		Indirizzo indirizzo1 = new Indirizzo("Garessio", 78, "Via dei campi");
+		Indirizzo indirizzo2 = new Indirizzo("Napoli", 2, "Via mandasdo");
+		Indirizzo indirizzo3 = new Indirizzo("Roma", 7, "Via quinditino");
+		Indirizzo indirizzo4 = new Indirizzo("Mondovi", 5, "Via Garibaldi");
 		
 		EntityTransaction transaction = em.getTransaction();
 		transaction.begin();

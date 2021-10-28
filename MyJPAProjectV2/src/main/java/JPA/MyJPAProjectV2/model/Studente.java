@@ -29,10 +29,11 @@ public class Studente {
 	public Studente() {
 	}
 			
-	public Studente( String nome, String cognome, int voto) {
+	public Studente( String nome, String cognome, int voto, Indirizzo indirizzo) {
 		this.nome = nome;
 		this.cognome = cognome;
 		this.voto = voto;
+		this.indirizzo = indirizzo;
 	}
 
 	public Long getId() {
@@ -66,6 +67,14 @@ public class Studente {
 	public void setVoto(int voto) {
 		this.voto = voto;
 	}
+	
+	public Indirizzo getIndirizzo() {
+		return indirizzo;
+	}
+
+	public void setIndirizzo(Indirizzo indirizzo) {
+		this.indirizzo = indirizzo;
+	}
 
 	@Override
 	public String toString() {
@@ -73,7 +82,8 @@ public class Studente {
 				+ indirizzo + "]";
 	}
 
-
-
+	public Indirizzo getStudente(){
+		this.getStudente();
+		return indirizzo;}
 	
 }
