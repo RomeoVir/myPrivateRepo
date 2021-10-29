@@ -37,5 +37,10 @@ public class Aereo extends MezzoAMotore {
 		this.modello = modello;
 	}
 
+	@Override
+	public String toString() {
+		return "Aereo [Anno di Produzione="+ annoProduzione + ", eliche=" + eliche + ", modello=" + modello + "]";
+	}
+
 	
 }

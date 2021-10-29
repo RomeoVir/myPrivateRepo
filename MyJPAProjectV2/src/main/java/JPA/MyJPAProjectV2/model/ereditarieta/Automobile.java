@@ -2,6 +2,8 @@ package JPA.MyJPAProjectV2.model.ereditarieta;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
+
 
 
 @Entity
