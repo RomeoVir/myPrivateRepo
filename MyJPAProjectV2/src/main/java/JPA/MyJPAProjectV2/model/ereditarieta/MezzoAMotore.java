@@ -11,8 +11,6 @@ import javax.persistence.InheritanceType;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-//Ho questo errrore ma funziona lo stesso bohh
-
 @Entity(name = "mezzoamotore")//<<<<----importante per eseguire la query!!
 @Table(name = "mezzoamotore")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE) //TABLE_PER_CLASS //JOINED
@@ -26,7 +24,9 @@ public abstract class MezzoAMotore {
 
 	@Column(name = "annoproduzione")
 	protected Integer annoProduzione;
-
+	
+	private String modello;
+	
 	public MezzoAMotore(Integer annoProduzione) {
 		this.annoProduzione = annoProduzione;
 	}
